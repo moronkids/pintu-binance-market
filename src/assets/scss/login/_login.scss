@@ -1,0 +1,161 @@
+.loginPage {
+  background: #f6f7fb;
+  width: 100vw;
+  height: 100vh;
+  & .bb-top {
+    top: 0px;
+    right: 0px;
+    max-width: calc((100vw - 27.125em));
+    max-height: calc(58vh);
+    min-height: 100px;
+    min-width: 200px;
+  }
+  & .bb-btm {
+    bottom: 0px;
+    left: 0px;
+    max-width: calc((100vw - 27.125em));
+    max-height: calc(58vh);
+    min-height: 100px;
+    min-width: 200px;
+  }
+  & .bubble-top {
+    background-image: url("../../img/loginPage/bubble-top.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 21.125em;
+    height: 23.7em;
+    right: 0;
+  }
+  & .bubble-btm {
+    background-image: url("../../img/loginPage/bubble-btm.svg");
+    @extend .bubble-top;
+    width: 23.125em;
+    height: 28.7em;
+    right: unset;
+    bottom: 0;
+  }
+  & .forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 524px) {
+      width: 100%;
+    }
+    & .wrapLogin {
+      z-index: 100;
+      @media (max-width: 524px) {
+        z-index: 100;
+        width: 100%;
+        padding: 35px;
+      }
+      & .iconLogin {
+        background-image: url("../../img/loginPage/iconLogin.svg");
+        width: 470px;
+        height: 180px;
+        background-size: 470px;
+        @media (max-width: 524px) {
+          width: 250px;
+          height: 87px;
+          background-size: 250px;
+          background-repeat: no-repeat;
+        }
+      }
+      & .formLogin {
+        padding-top: 37px;
+        & .inputLogin {
+          padding-bottom: 26px;
+          & .label {
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding-bottom: 8px;
+            color: #7a7a7a;
+          }
+          & input {
+            /* Auto Layout */
+            max-width: 600px;
+            width: 100%;
+            height: 60px;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            // align-items: flex-start;
+            padding: 4px 16px;
+            background: #ffffff;
+            border: 1px solid #3183ff;
+            box-sizing: border-box;
+            border-radius: 10px;
+            //font
+            color: #393938;
+            /* Inside Auto Layout */
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+            margin: 2px 0px;
+          }
+          input:focus {
+            // border: none;
+            border: 2px solid #007bff;
+
+            // border-color: red;
+            // border-radius: 10px;
+            outline: none;
+            // box-shadow: 0 0 3px 0 #ddd;
+            // border: none;
+          }
+          & input::placeholder {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            /* identical to box height, or 24px */
+
+            /* Component/Main */
+
+            color: #7a7a7a;
+          }
+        }
+        & .btnLogin {
+          border: unset;
+          outline: none;
+          /* Auto Layout */
+          width: 169px;
+          height: 55px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;
+          cursor: pointer;
+          background: #0b4a94;
+          border-radius: 10px;
+          //font
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 18px;
+          /* identical to box height, or 100% */
+
+          /* Text/White text */
+
+          color: #ffffff;
+
+          /* Inside Auto Layout */
+
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+}

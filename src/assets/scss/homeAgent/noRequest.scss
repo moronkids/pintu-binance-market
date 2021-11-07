@@ -1,0 +1,39 @@
+//testing
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 110px;
+    margin-bottom: auto;
+
+    .column-no-data {
+        text-align: center;
+        margin: auto auto;
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #033fff;
+            padding: 10px 10px;
+            color: #fff;
+            border-radius: 10px;
+            border-style: none;
+            font-size: 13px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+        }
+    }
+}

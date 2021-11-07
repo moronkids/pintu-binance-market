@@ -1,0 +1,113 @@
+body {
+    // background: #e5e5e5;
+    background: #f5f5f5;
+}
+a {
+    text-decoration: unset;
+    color: gray;
+    &:hover {
+        text-decoration: unset;
+        color: rgb(36, 36, 36);
+    }
+}
+.layouts {
+    & .sidebar {
+        max-width: 130px;
+        position: fixed;
+        float: left;
+        background-color: #f9921c;
+        height: 100vh;
+        width: 100%;
+        @media (max-width: 524px) {
+            // height: fit-content;
+            display: none;
+            width: 100%;
+        }
+        &__wrap-vertical {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            & .iconBri {
+                cursor: pointer;
+                background-color: #f9921c;
+                height: 144px;
+                width: 100%;
+            }
+            & .radiusBottomRight {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 62% 100%);
+            }
+            & .radiusBottomRightMini {
+                clip-path: polygon(74% 30%, 100% 31%, 100% 100%, 74% 100%);
+            }
+            & .iconBri.radius {
+                border-radius: 0px 0px 30px 0px;
+                // clip-path: polygon(0 0, 100% 0, 100% 100%, 62% 100%);
+            }
+            & .iconMenus {
+                cursor: pointer;
+                height: 110px;
+                width: 100%;
+                z-index: 99;
+            }
+            & .iconMenus.active {
+                margin-left: 19px;
+                border-radius: 30px 30px 30px 0px;
+                box-shadow: 7px 0px 5px rgba(0, 0, 0, 0.05);
+                height: 110px;
+                width: 100%;
+                background-color: #fbfbfb;
+            }
+            & .iconMenus.radius {
+                border-radius: 0px 0px 30px 0px;
+                background-color: #f9921c;
+            }
+        }
+    }
+    & .sidebarMobile {
+        z-index: 101;
+        box-shadow: 5px 0px 10px -6px black;
+        // transform: translate3d(0, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        transition: all 0.5s;
+        padding-top: 90px;
+        padding-left: 20px;
+        ul {
+            font-family: Roboto, "sans-serif";
+            font-weight: bold;
+            list-style-type: none; /* Remove bullets */
+            li {
+                cursor: pointer;
+                line-height: 30px;
+            }
+        }
+        @media (max-width: 524px) {
+            // display: flex;
+            width: 75vw;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+    }
+    & .sidebarMobile.show {
+        transform: translate3d(0, 0, 0);
+        display: block !important;
+    }
+    & .header {
+        display: none;
+        z-index: 102;
+        @media (max-width: 524px) {
+            display: flex;
+
+            width: 100vw;
+            height: 70px;
+            background-color: #f9921c;
+        }
+        & .wrap {
+            // justify-content: center;
+            align-items: center;
+            padding: 7.5px;
+        }
+    }
+}
+
+@import "./hamburger";

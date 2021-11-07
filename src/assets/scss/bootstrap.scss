@@ -1,0 +1,115 @@
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "utilities";
+@import "print";
+
+// import roboto font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+//import custom styling
+@import "../../assets/scss/agen/profile/agentProfile";
+@import "../../components/layouts/layouts.scss";
+
+// semua scss tampilan menu nav home
+// @import "../scss/home/home";
+// @import "../scss/home/home-detail";
+
+// semua scss tampilan nav transaksi
+@import "../scss/transactions/choose-transaction";
+@import "../scss/transactions/form-transaction";
+@import "../scss/transactions/table-agent-transaction";
+@import "../scss/homeCustomer/home";
+@import "../scss/homeCustomer/home-detail";
+@import "../scss/login/login";
+@import "../scss/homeAgent/detailRequest.scss";
+@import "../scss/homeAgent/noRequest.scss";
+@import "../scss/not_found/notFound";
+
+.modal-popup {
+    margin-left: -135px;
+    @media (max-width: 524px) {
+        margin-left: 0px;
+    }
+}
+.wrap-tabel {
+    @media (max-width: 524px) {
+        width: 100% !important;
+    }
+}
+.bodyWrap {
+    padding: 0 30px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 135px;
+    // height: 100vh;
+    @media (max-width: 524px) {
+        padding: 0px;
+        padding-top: 90px;
+        margin: 0px 20px 20px 20px;
+    }
+    & form {
+        width: 100%;
+        max-width: 1000px;
+    }
+    // @media (max-width: 425px) {
+    //     padding-top: 0px;
+    // }
+
+    // /**
+    //     mobile screen
+    //     added by Teguh
+    // */
+    // @media (max-width: 524px) {
+    //     padding-top: 130px !important;
+    //     margin-left: 0px !important;
+    // }
+
+    // /**
+    //     tablet screen
+    //     added by Teguh
+    // */
+    // @media (max-width: 1024px) {
+    //     margin-left: 0px !important;
+    // }
+}

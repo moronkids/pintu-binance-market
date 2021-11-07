@@ -1,0 +1,99 @@
+/**
+    ini adalah scss detail transaksi yang diakses
+    melalui beranda customer
+*/
+
+$color-label: #888888;
+$weight-font-content: 700;
+
+.bodyWrap {
+    font-family: "Roboto", sans-serif;
+
+    .customer-container {
+        max-width: 877px;
+        // min-height: 616px;
+        width: 100% !important;
+        height: fit-content;
+        // padding: 0 30px;
+        @media (max-width: 574px) {
+            min-width: fit-content;
+            width: 100% !important;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #014a94;
+            padding-bottom: 20px;
+
+            @media (max-width: 574px) {
+                padding-left: 20px;
+            }
+        }
+
+        /* .myCard {
+            margin-bottom: 60px;
+        } */
+
+        .my-card-body {
+            padding: 20px;
+
+            @media (max-width: 574px) {
+                padding: 10px;
+            }
+
+            .label-judul {
+                color: $color-label;
+                font-size: 14px;
+            }
+
+            .label-content {
+                margin-top: -15px;
+                font-size: 16px;
+                //font-weight: $weight-font-content;
+            }
+
+            .status {
+                color: #014a94 !important;
+            }
+
+            .garis-pertama {
+                padding-bottom: 6px;
+                margin-top: -4px;
+            }
+
+            .garis-kedua {
+                margin-top: -1px;
+            }
+
+            .label-nominal-transaksi {
+                color: #65c466;
+                font-weight: bold;
+            }
+
+            .wrap-konten {
+                margin-top: -12px !important;
+                @media (max-width: 574px) {
+                    width: 100%;
+                    margin-bottom: 10px !important;
+                }
+            }
+
+            .label-icon-wa {
+                display: inline;
+                img {
+                    width: 20px;
+                    margin-top: -3px;
+                }
+            }
+
+            .label-nomor {
+                display: inline;
+                margin-left: 10px;
+
+                .link-nomor {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
