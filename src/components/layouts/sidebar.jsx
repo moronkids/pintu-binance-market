@@ -2,11 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Pintu from "assets/img/pintu.webp";
 import IconHome from "assets/img/icons/Home.svg";
 import IconHomeWhite from "assets/img/icons/Home_w.svg";
-import IconTransaction from "assets/img/icons/Transaction.svg";
-import IconTransactionWhite from "assets/img/icons/Transaction_w.svg";
-import IconProfile from "assets/img/icons/Profile.svg";
-import IconProfileWhite from "assets/img/icons/Profile_w.svg";
-import IconLogout from "assets/img/icons/Logout.svg";
+
 import { Hooks } from "providers";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
@@ -135,21 +131,6 @@ function Sidebar(props) {
                     alt=""
                   />
                 </div>
-              </div>
-            </Link>
-
-            <Link to="/profile">
-              <div
-                className={`iconMenus ${loc.pathname === "/profile" && `active`}
-                        d-flex justify-content-center align-items-center position-relative`}
-                onClick={(e) => setActiveTab("profile")}
-              >
-                <img
-                  src={
-                    loc.pathname === "/profile" ? IconProfile : IconProfileWhite
-                  }
-                  alt=""
-                />
               </div>
             </Link>
           </div>

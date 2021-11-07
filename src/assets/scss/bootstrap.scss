@@ -47,18 +47,6 @@
 //import custom styling
 @import "../../assets/scss/agen/profile/agentProfile";
 @import "../../components/layouts/layouts.scss";
-
-// semua scss tampilan menu nav home
-// @import "../scss/home/home";
-// @import "../scss/home/home-detail";
-
-// semua scss tampilan nav transaksi
-@import "../scss/transactions/choose-transaction";
-@import "../scss/transactions/form-transaction";
-@import "../scss/transactions/table-agent-transaction";
-@import "../scss/homeCustomer/home";
-@import "../scss/homeCustomer/home-detail";
-@import "../scss/login/login";
 @import "../scss/homeAgent/detailRequest.scss";
 @import "../scss/homeAgent/noRequest.scss";
 @import "../scss/not_found/notFound";
@@ -92,24 +80,4 @@
         width: 100%;
         max-width: 1000px;
     }
-    // @media (max-width: 425px) {
-    //     padding-top: 0px;
-    // }
-
-    // /**
-    //     mobile screen
-    //     added by Teguh
-    // */
-    // @media (max-width: 524px) {
-    //     padding-top: 130px !important;
-    //     margin-left: 0px !important;
-    // }
-
-    // /**
-    //     tablet screen
-    //     added by Teguh
-    // */
-    // @media (max-width: 1024px) {
-    //     margin-left: 0px !important;
-    // }
 }
