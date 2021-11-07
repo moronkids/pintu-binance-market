@@ -10,7 +10,7 @@ const Routes = () => {
     <>
       <Switch>
         {/* logged routes */}
-        <LoggedRoutes exact path="/" component={Dashboard} />
+        <LoggedRoutes path="/" component={Dashboard} />
         <Route component={NotFound} />
       </Switch>
     </>
