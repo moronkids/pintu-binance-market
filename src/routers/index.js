@@ -9,7 +9,9 @@ const Routes = () => {
   return (
     <>
       <Switch>
-        <LoggedRoutes exact path="/" component={Dashboard} />
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
         <LoggedRoutes exact path="/home" component={Dashboard} />
         <Route component={NotFound} />
       </Switch>
