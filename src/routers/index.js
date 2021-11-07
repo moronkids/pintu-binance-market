@@ -9,7 +9,6 @@ const Routes = () => {
   return (
     <>
       <Switch>
-        {/* logged routes */}
         <LoggedRoutes exact path="/" component={Dashboard} />
         <LoggedRoutes exact path="/home" component={Dashboard} />
         <Route component={NotFound} />
