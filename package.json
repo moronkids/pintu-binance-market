@@ -1,6 +1,6 @@
 {
   "name": "frontend-assestment-pintu",
-  "homepage": "https://pintu-binance-market.vercel.app/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
