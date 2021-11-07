@@ -6,7 +6,7 @@ import "assets/scss/bootstrap.scss";
 const App = () => {
   return (
     <>
-      <Router basename="/index.html">
+      <Router>
         <Switch>
           <Route component={Routes} />
         </Switch>
