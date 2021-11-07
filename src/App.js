@@ -6,13 +6,13 @@ import "assets/scss/bootstrap.scss";
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename="/index.html">
         <Switch>
           <Route component={Routes} />
         </Switch>
       </Router>
     </>
   );
-}
+};
 
 export default App;
