@@ -93,7 +93,7 @@ function Home() {
   useEffect(() => {
     if (lastMessage) {
       result = callbackz();
-
+      console.log(result, "ceki");
       // throw Error;
       setDatas(result);
     }

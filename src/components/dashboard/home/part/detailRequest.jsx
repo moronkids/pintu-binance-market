@@ -48,10 +48,11 @@ const DetailRequest = ({ data, isLoading }) => {
       options: {
         filter: false,
         sort: true,
-        customSort: (data, colIndex, order) => {
-          console.log(data, colIndex, order, "ehhe");
-          throw Error;
-        },
+        sortDirection: "asc",
+        // customSort: (data, colIndex, order) => {
+        //   console.log(data, colIndex, order, "ehhe");
+        //   throw Error;
+        // },
         customBodyRender: function (val) {
           return (
             <div className="subpixel-antialiased text-base font-bold text-gray-500 flex flex-row gap-3">
